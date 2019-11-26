@@ -3,8 +3,9 @@
 const vscode = require("vscode");
 const fs = require("fs");
 const mimeTypes = require("mime-types");
+const path = require("path");
 
-const TEMP_IMAGE_PATH = __dirname + "/scripts/ezpaste-temp.png";
+const TEMP_IMAGE_PATH = path.join(__dirname, "scripts", "ezpaste-temp.png");
 
 /**
  * @param {vscode.ExtensionContext} context
