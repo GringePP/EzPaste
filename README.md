@@ -1,65 +1,40 @@
-# ezpaste README
+# EzPaste
 
-This is the README for your extension "ezpaste". After writing up a brief description, we recommend including the following sections.
+**EzPaste** is a tiny little extension to help you paste image to Markdown doc.
 
-## Features
+Are you tired of copying images from network, pasting to your local diretory and including it to your markdown doc with relative or absolute path? It's pretty annoying when we are focusing on writing.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+There are several extensions that can help us paste image to Markdown doc in an elegant way, like uploading your copied image to the cloud then leaves you an url. It's a good way, however, not everyone has a image hosting service.
 
-For example if there is an image subfolder under your extension project workspace:
+So, I came out with an idea to encode image in Base64 and use the `<img>` tag to insert into Markdown doc.
 
-\!\[feature X\]\(images/feature-x.png\)
+The Base64 might be tediously long, but it's still a compromised way to keep yourself in smooth writing.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
+
+1. Copy any images from network
+2. Go to your doc and let the editor cursor be at the right place
+3. Press `ctrl+shift+p` to open command input
+4. Input `EzPaste` and select `EzPaste: paste image from clipboard`
+5. You can see the image pasted to your doc in Base4
+
+_show-how gif is preparing..._
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+It's availale on Windows for now. MacOS and Linux are on their ways.
 
-## Extension Settings
+## Issues
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+If you've found any problems, you're welcome to raise issues here. https://github.com/GringePP/EzPaste/issues
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 1.0
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- First release
+- Can read image from clipboard and encodes it in Base64
+- Paste image with `<img>`
+- Available on Windows, for now
 
 **Enjoy!**
