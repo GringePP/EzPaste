@@ -4,7 +4,7 @@
   "description": "",
   "publisher": "Mindjet",
   "version": "0.0.1",
-  "icon": "https://raw.githubusercontent.com/GringePP/EzPaste/master/images/EzPaste.png",
+  "icon": "images/EzPaste.png",
   "engines": {
     "vscode": "^1.40.0"
   },
