@@ -2,7 +2,8 @@
   "name": "ezpaste",
   "displayName": "EzPaste",
   "description": "",
-  "version": "0.0.2",
+  "publisher": "Mindjet",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.40.0"
   },
